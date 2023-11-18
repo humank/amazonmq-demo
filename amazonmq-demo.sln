@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "amazonmq-producer", "amazonmq-producer\amazonmq-producer.csproj", "{0B597387-F1F3-4B99-8E89-D688ECE86DDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "amazonmq-consumer", "amazonmq-consumer\amazonmq-consumer.csproj", "{45460833-D2A8-4EC3-AA1B-DAE9E59BF576}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "amazonmq-durable-consumer", "amazonmq-durable-consumer\amazonmq-durable-consumer.csproj", "{53B4FE8A-309F-463A-A79A-906DE87203F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B597387-F1F3-4B99-8E89-D688ECE86DDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B597387-F1F3-4B99-8E89-D688ECE86DDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B597387-F1F3-4B99-8E89-D688ECE86DDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B597387-F1F3-4B99-8E89-D688ECE86DDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45460833-D2A8-4EC3-AA1B-DAE9E59BF576}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45460833-D2A8-4EC3-AA1B-DAE9E59BF576}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45460833-D2A8-4EC3-AA1B-DAE9E59BF576}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45460833-D2A8-4EC3-AA1B-DAE9E59BF576}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53B4FE8A-309F-463A-A79A-906DE87203F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53B4FE8A-309F-463A-A79A-906DE87203F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53B4FE8A-309F-463A-A79A-906DE87203F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53B4FE8A-309F-463A-A79A-906DE87203F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
