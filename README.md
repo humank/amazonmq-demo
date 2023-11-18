@@ -3,6 +3,18 @@
 This is a sample project to demonstrate how to send the messages to AmazonMQ - Active MQ TOPIC.
 The TOPIC message consuming mechanism could support multiple consumers to execute the durable consuming process. In addtion, this sample also support the Dead-Letter-Queue design which provied the second chance to resolve the runtime exception issues.
 
+## Setup the environment
+
+> Provision the AmazonMQ ActiveMQ from console or any IaC tools, then save the brokeruri, username and password to Parameter Stores, so that you won't disclosure the credentials.
+
+ParameterStore path :
+
+BrokerUri - /amazonmq/activemq/brokeruri  
+
+UserName - /amazonmq/activemq/username
+
+Password - /amazonmq/activemq/password
+
 ## How to run the demo
 
 Start the consumer.
