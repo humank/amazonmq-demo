@@ -21,7 +21,9 @@ Start the consumer.
 Commandline arguments : 
 
 args[0] - Specify the client id
+
 args[1] - Specify the durable subscrition consumer name
+
 args[2] - to enable runtime exception by "Y", otherwise set "N"
 
 ```
