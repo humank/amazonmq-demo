@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "amazonmq-producer", "amazonmq-producer\amazonmq-producer.csproj", "{0B597387-F1F3-4B99-8E89-D688ECE86DDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "amazonmq-consumer", "amazonmq-consumer\amazonmq-consumer.csproj", "{45460833-D2A8-4EC3-AA1B-DAE9E59BF576}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "amazonmq-commons", "amazonmq-commons\amazonmq-commons.csproj", "{45460833-D2A8-4EC3-AA1B-DAE9E59BF576}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "amazonmq-durable-consumer", "amazonmq-durable-consumer\amazonmq-durable-consumer.csproj", "{53B4FE8A-309F-463A-A79A-906DE87203F3}"
 EndProject

@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+using amazonmq_consumer;
 using Apache.NMS;
 using Apache.NMS.ActiveMQ;
 
@@ -7,19 +8,23 @@ namespace amazonmq_durable_consumer
 {
     class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             
             Console.WriteLine("args[0]" + args[0]);
             Console.WriteLine("args[1]" + args[1]);
             Console.WriteLine("Chaos test " + args[2]);
-            const string brokerUri = "ssl://b-a0f648ab-44c6-4873-87d3-22fbe1049811-2.mq.us-west-2.amazonaws.com:61617"; // 替換成你的 AmazonMQ broker URL
-            const string userName = "activemq"; // 替換成你的 AmazonMQ 用戶名
-            const string password = "activemq2023"; // 替換成你的 AmazonMQ 密碼
+            
+            var brokerUri = SSMUtils.GetValue("/amazonmq/activemq/brokeruri"); // 替換成你的brokerUri
+            var userName = SSMUtils.GetValue("/amazonmq/activemq/username"); // 替換成你的 AmazonMQ 帳號
+            var password = SSMUtils.GetValue("/amazonmq/activemq/password"); // 替換成你的 AmazonMQ 密碼
+            
             const string topicName = "demo-topic"; // 替換成你想要發送消息的主題名
             //string clientId = "consumer-kim-local"; // 客戶端ID
+            
             var clientId = args[0]; // 客戶端ID
             //string subscriptionName = "consumer-kim-subscription"; // 持久訂閱名稱
+            
             var subscriptionName = args[1]; // 持久訂閱名稱
             const string dlqName = "ActiveMQ.DLQ"; // 死信隊列的名稱
             var chaosTest = args[2].Equals("Y") ;
